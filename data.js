@@ -39,18 +39,36 @@ async function display() {
       document.getElementById(element_team).innerHTML = result_team[a];
     }
   }
+  for (let i = 0; i <= 15; i++) {
+    if (document.getElementById("score" + i) !== null) {
+      document.getElementById("score" + i).innerHTML = result_score[i];
+    }
+  }
 
-  for (let i = 16; i <= 19; i++) {
+  for (let i = 16; i <= 25; i++) {
     element = "img" + i;
     if (document.getElementById(element) !== null) {
       document.getElementById(element).src = result_img[i];
     }
   }
 
-  for (let a = 8; a <= 9; a++) {
+  for (let a = 8; a <= 12; a++) {
     element_date = "date" + a;
     if (document.getElementById(element_date) !== null) {
       document.getElementById(element_date).innerHTML = result_date[a];
+    }
+  }
+
+  for (let a = 16; a <= 25; a++) {
+    element_team = "team" + a;
+    if (document.getElementById(element_team) !== null) {
+      document.getElementById(element_team).innerHTML = result_team[a];
+    }
+  }
+
+  for (let i = 16; i <= 25; i++) {
+    if (document.getElementById("score" + i) !== null) {
+      document.getElementById("score" + i).innerHTML = result_score[i];
     }
   }
 }
