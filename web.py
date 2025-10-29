@@ -72,17 +72,11 @@ logo_sync()
 with app.app_context():
    def score_sync():
       scores = []
-      linescores = []
-
+      
       for event in data_refrsh()['events']:
-         for competition in event['competitions']:
-            for competitor in competition['competitors']:
-               for linescore in competitor['linescores']:
-                  linescore_1 = linescore['displayValue']
-                  linescores.append(linescore_1)
-
-
-      if (linescores == None):      
+            clock = event['status']['clock']
+                          
+      if (clock == 0):      
          return None 
          
       else:
