@@ -60,8 +60,8 @@ with app.app_context():
          
       else:
          for event in data_refrsh()['events']:
-            for competion in event['competitions']:
-               for competitor in competion['competitors']:
+            for competition in event['competitions']:
+               for competitor in competition['competitors']:
                   logo_1 = competitor['team']['logo']
                   logos.append(logo_1)
                
@@ -72,7 +72,17 @@ logo_sync()
 with app.app_context():
    def score_sync():
       scores = []
-      if (scores == None and scores > 0):      
+      linescores = []
+
+      for event in data_refrsh()['events']:
+         for competition in event['competitions']:
+            for competitor in competition['competitors']:
+               for linescore in competitor['linescores']:
+                  linescore_1 = linescore['displayValue']
+                  linescores.append(linescore_1)
+
+
+      if (linescores == None):      
          return None 
          
       else:
