@@ -27,6 +27,21 @@ header {
   text-align: center;
 }
 
+.searchcontain {
+  position: relative;
+  left: 70%;
+  top: 8%;
+  height: 40px;
+  display: flex;
+  border: 2px solid;
+  border-color: rgb(0, 0, 0);
+  width: 18%;
+  align-content: flex-start;
+}
+#searchbtn {
+  flex-grow: 1;
+}
+
 .navbar a:hover {
   background-color: rgb(167, 115, 36);
 }
