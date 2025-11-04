@@ -21,59 +21,104 @@ async function display() {
   for (let i = 0; i <= 15; i++) {
     element = "img" + i;
 
-    if (document.getElementById(element) !== null) {
-      document.getElementById(element).src = result_img[i];
+    if (result_img[i] == null) {
+      document.getElementById(element) == null;
+    } else {
+      if (document.getElementById(element) !== null) {
+        document.getElementById(element).src = result_img[i];
+      }
     }
   }
 
   for (let a = 0; a <= 7; a++) {
     element_date = "date" + a;
-    if (document.getElementById(element_date) !== null) {
-      document.getElementById(element_date).innerHTML = result_date[a];
+    if (result_date[a] == null) {
+      document.getElementById(element_date) == null;
+    } else {
+      if (document.getElementById(element_date) !== null) {
+        document.getElementById(element_date).innerHTML = result_date[a];
+      }
     }
   }
 
   for (let a = 0; a <= 15; a++) {
     element_team = "team" + a;
-    if (document.getElementById(element_team) !== null) {
-      document.getElementById(element_team).innerHTML = result_team[a];
+
+    if (result_team[a] == null) {
+      document.getElementById(element_team) == null;
+    } else {
+      if (document.getElementById(element_team) !== null) {
+        document.getElementById(element_team).innerHTML = result_team[a];
+      }
     }
   }
+
   for (let i = 0; i <= 15; i++) {
-    if (document.getElementById("score" + i) !== null) {
-      document.getElementById("score" + i).innerHTML = result_score[i];
+    if (result_score[i] == null) {
+      document.getElementById("score" + i) == null;
+    } else {
+      if (document.getElementById("score" + i) !== null) {
+        document.getElementById("score" + i).innerHTML = result_score[i];
+      }
     }
   }
 
   for (let i = 16; i <= 27; i++) {
     element = "img" + i;
-    if (document.getElementById(element) !== null) {
-      document.getElementById(element).src = result_img[i];
+    if (result_img[i] == null) {
+      document.getElementById(element) == null;
+    } else {
+      if (document.getElementById(element) !== null) {
+        document.getElementById(element).src = result_img[i];
+      }
     }
   }
 
   for (let a = 8; a <= 13; a++) {
     element_date = "date" + a;
-    if (document.getElementById(element_date) !== null) {
-      document.getElementById(element_date).innerHTML = result_date[a];
+    if (result_date[a] == null) {
+      document.getElementById(element_date) == null;
+    } else {
+      if (document.getElementById(element_date) !== null) {
+        document.getElementById(element_date).innerHTML = result_date[a];
+      }
     }
   }
 
   for (let a = 16; a <= 27; a++) {
     element_team = "team" + a;
-    if (document.getElementById(element_team) !== null) {
-      document.getElementById(element_team).innerHTML = result_team[a];
+    if (result_team[a] == null) {
+      document.getElementById(element_team) == null;
+    } else {
+      if (document.getElementById(element_team) !== null) {
+        document.getElementById(element_team).innerHTML = result_team[a];
+      }
     }
   }
-
   for (let i = 16; i <= 27; i++) {
-    if (document.getElementById("score" + i) !== null) {
-      document.getElementById("score" + i).innerHTML = result_score[i];
+    if (result_score[i] == null) {
+      document.getElementById("score" + i) == null; //sets a value of nothing to the id if the value for it doesnt exist
+    } else {
+      if (document.getElementById("score" + i) !== null) {
+        //checks if  id exists on the page that its on and only runs if it exists
+        document.getElementById("score" + i).innerHTML = result_score[i];
+      }
     }
   }
 }
-
 display();
 
 //setInterval(update, 12000);
 //setInterval(display, 13000);7
+//for (let i = 0; i <= 15; i++) {
+//if (document.getElementById("score" + i) !== null) {
+//document.getElementById("score" + i).innerHTML = result_score[i];
+//  }
+//  }
+//for (let i = 16; i <= 27; i++) {
+//if (document.getElementById("score" + i) !== null) {
+//document.getElementById("score" + i).innerHTML = result_score[i];
+//}
+//}
+//if (document.getElementById("score" + i) !== null) {
+//if (document.getElementById("score" + i) !== null) {

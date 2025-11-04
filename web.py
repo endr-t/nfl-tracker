@@ -1,5 +1,4 @@
 
-
 import requests
 from flask import Flask, render_template, jsonify
 from flask_cors import CORS
@@ -73,20 +72,30 @@ with app.app_context():
    def score_sync():
       scores = []
       
+
       for event in data_refrsh()['events']:
-            clock = event['status']['clock']
-                          
-      if (clock == 0):      
-         return None 
-         
-      else:
-         for event in data_refrsh()['events']:
+         state_1 = event['status']['type']['state']
+         if state_1 == "in" or state_1 == "post": #checks if the game is playing or has ended and only shows scores if either or true
             for competion in event['competitions']:
                for competitor in competion['competitors']:
                   score_1 = competitor['score']
                   scores.append(score_1)
+         
+
+                     
+                  
+
+      
+         
+                  
+                        
+
+      return scores
                
-         return scores
+                          
+      
+               
+         
          
 score_sync()
     
@@ -149,3 +158,21 @@ if __name__ == '__main__':
                   #team_name = competitor['team']['displayName']
                   #teams.append(team_name) 
       #return teams     
+
+#if clock_check[0] == 0:      
+         #return None 
+         
+      #else:
+         #for event in data_refrsh()['events']:
+            #for competion in event['competitions']:
+               #for competitor in competion['competitors']:
+                  #score_1 = competitor['score']
+                  #scores.append(score_1)
+
+#for i in range(1):
+            #if clock_1 != "0:00":
+               #for event in data_refrsh()['events']:
+                  #for competion in event['competitions']:
+                     #for competitor in competion['competitors']:
+                        #score_1 = competitor['score']
+                        #scores.append(score_1)

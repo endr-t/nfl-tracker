@@ -62,11 +62,6 @@ header {
   width: 100%;
   background-color: rgb(79, 49, 12);
 }
-.container {
-  border: 2px solid rgba(0, 0, 0, 0.936);
-  height: 1000px;
-  width: 50%;
-}
 
 .fheader {
   position: static;
@@ -79,41 +74,62 @@ header {
 .fcontainer {
   width: 100%;
   height: 110vh;
-  border-color: black;
-  border: 2px solid;
+  border-color: rgb(131, 244, 55);
+  border: 1px solid;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-bottom: 124px;
-  margin-bottom: 100px;
+  padding-bottom: 130px;
+  margin-bottom: 102px;
+}
+
+.teams_img {
+  border: 2px solid;
+  border-color: rgba(22, 235, 175, 0.858);
+
+  width: 100%;
+  height: 40%;
 }
 
 .game_even {
   width: 50%;
   height: 28%;
-  border-color: black;
+  border-color: rgb(252, 252, 42);
   border-bottom: 1px;
   border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
 }
 .game_odd {
   width: 49%;
   height: 28%;
   flex-grow: 1;
-  border-color: black;
+  border-color: rgb(0, 0, 0);
   border-bottom: 1px;
   border-style: solid;
 }
 .dates {
-  border: 2px solid;
-  height: 35px;
+  border: 1px solid;
+  height: 23%;
   width: 100%;
   text-align: center;
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(186, 16, 242);
+}
+
+.teams {
+  border: 1px solid;
+  border-color: rgba(248, 48, 48, 0.858);
+  height: 23%;
+  width: 100%;
+  display: flex;
+  /*align-content: flex-start;*/
+  position: relative;
 }
 .scores {
   border: 1px solid;
+  border-color: rgb(98, 216, 51);
   width: 100%;
-  height: 78px;
+  height: 52%;
   position: relative;
 }
 
@@ -138,16 +154,6 @@ header {
   padding-left: 50%;
 }
 
-.teams {
-  border: 2px solid;
-  border-color: rgba(0, 0, 0, 0.858);
-  height: 40px;
-  width: 100%;
-  display: flex;
-  align-content: flex-start;
-  position: relative;
-}
-
 .team_even {
   position: absolute;
   left: 55px;
@@ -158,12 +164,12 @@ header {
 }
 .text {
   border: 2px solid;
-  border-color: black;
+  border-color: rgb(0, 0, 0);
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   width: 100%;
-  height: 60%;
+  height: 58%;
 }
 
 .pagination {
