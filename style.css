@@ -73,14 +73,14 @@ header {
 
 .fcontainer {
   width: 100%;
-  height: 110vh;
+  height: 1000px;
   border-color: rgb(131, 244, 55);
   border: 1px solid;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-bottom: 130px;
-  margin-bottom: 102px;
+  padding-bottom: 9%;
+  margin-bottom: 120px;
 }
 
 .teams_img {
